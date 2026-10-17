@@ -29,17 +29,16 @@
 
 ```text
 movie-ticket-stub/
-├── SKILL.md                     # 主技能指导书（4 阶段流水线定义）
+├── SKILL.md                     # 主技能指导书（5 步流水线定义）
 ├── README.md                    # 技能概述与独立使用文档
-├── references/
-│   ├── prompt_templates.md      # 固化的瑞士风生图 Prompt 与数据规范
-│   └── visual_spec.md           # 9:16 视觉排版网格、动态字号阶梯与条形码规范
 ├── templates/
-│   └── ticket_template.html     # 原版 Tailwind 票根模板（全离线内联排版）
+│   └── ticket_template.html     # 原版 Tailwind 票根模板（排版与字号阶梯全部内联）
 └── scripts/
     ├── render_ticket.py         # 本地无头浏览器截图渲染脚本（支持 4x 视网膜高清）
-    └── config_manager.py        # 配置管理（首启偏好记忆引擎）
+    └── config_manager.py        # 首启偏好记忆引擎
 ```
+
+---
 
 ## 🚀 快速开始
 
@@ -73,9 +72,9 @@ python scripts/render_ticket.py --data-b64 "<BASE64_STRING>" --output "ticket.pn
   "movie_cn": "奥本海默",
   "movie_en": "OPPENHEIMER",
   "time_val": "2025.08.12 19:30",
-  "location_val": "万达影城 天佑城店\nIMAX 厅",
+  "location_val": "万达影城\n天佑城店",
   "price_val": "¥32.00",
-  "poster_path": "poster.png"
+  "artwork_path": "artwork.png"
 }
 ```
 
@@ -145,9 +144,9 @@ python scripts/render_ticket.py --data-b64 "<BASE64_STRING>" --output "ticket.pn
   "movie_cn": "奥本海默",
   "movie_en": "OPPENHEIMER",
   "time_val": "2025.08.12 19:30",
-  "location_val": "IMAX Hall, Cinema Park Branch\nWanda Cinemas",
+  "location_val": "Cinema Park Branch\nWanda Cinemas",
   "price_val": "$9.90",
-  "poster_path": "poster.png"
+  "artwork_path": "artwork.png"
 }
 ```
 
