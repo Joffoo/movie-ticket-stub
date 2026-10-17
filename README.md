@@ -104,13 +104,10 @@ It stays **100% pixel-identical** with the original web project `EverStub` (reus
 
 ```text
 movie-ticket-stub/
-├── SKILL.md                     # Main skill guide (4-stage pipeline)
+├── SKILL.md                     # Main skill guide (5-stage pipeline)
 ├── README.md                    # Overview & standalone usage (this file)
-├── references/
-│   ├── prompt_templates.md      # Swiss-style image-gen prompts & data spec
-│   └── visual_spec.md           # 9:16 visual grid, font ladder & barcode spec
 ├── templates/
-│   └── ticket_template.html     # Original Tailwind stub template (offline)
+│   └── ticket_template.html     # Original Tailwind stub template (layout & font ladder fully inlined)
 └── scripts/
     ├── render_ticket.py         # Headless browser rendering (4x retina)
     └── config_manager.py        # Config management (first-launch memory)
