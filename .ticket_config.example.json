@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "image_generator": "auto",
+  "output_dir": "auto",
+  "scale": 4.0,
+  "api_key": "",
+  "api_endpoint": ""
+}
